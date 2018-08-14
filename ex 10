@@ -1,0 +1,7 @@
+	public class Main
+	{  
+	Main(){System.out.println("hello java");}  
+	public static void main(String args[]){  
+	Main b=new Main();  
+	}  
+	}  
