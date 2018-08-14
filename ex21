@@ -1,0 +1,22 @@
+	public class Student{  
+	    int id;  
+	    String name;  
+	    String city;  
+	      
+	    Student(int id,String name){  
+	    this.id = id;  
+	    this.name = name;  
+	    }  
+	    Student(int id,String name,String city){  
+	    this(id,name);  
+	    this.city=city;  
+	    }  
+	    void display(){System.out.println(id+" "+name+" "+city);}  
+	      
+	    public static void main(String args[]){  
+	    Student e1 = new Student(111,"robert");  
+	    Student e2 = new Student(222,"will smith","USA");  
+	    e1.display();  
+	    e2.display();  
+	   }  
+	}  
