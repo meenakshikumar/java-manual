@@ -1,0 +1,28 @@
+  public	class Student{  
+	     int rollno;  
+	     String name;  
+     static String college = "RIT";  
+	       
+	     static void change(){  
+         college = "RIT";  
+         }  
+	  
+	     Student(int r, String n){  
+         rollno = r;  
+	     name = n;  
+	     }  
+	  
+	     void display (){System.out.println(rollno+" "+name+" "+college);}  
+	  
+	    public static void main(String args[]){  
+	    Student.change();  
+  
+	    Student s1 = new Student (1,"Kareena");  
+	    Student s2 = new Student (2,"roshan");  
+	    Student s3 = new Student (3,"deepika");  
+	  
+	    s1.display();  
+	    s2.display();  
+	    s3.display();  
+	    }  
+	}  
