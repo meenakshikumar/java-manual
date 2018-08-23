@@ -1,0 +1,15 @@
+import java.util.*;
+		class bike {
+		void run(){
+		    System.out.println("Vehicle is running");}  
+		}  
+		     public class main extends bike{  
+		        public static void main(String args[]){  
+		       main obj = new main();  
+		       obj.run();  
+		      }  
+		   }
+
+	
+
+
