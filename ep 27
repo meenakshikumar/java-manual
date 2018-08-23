@@ -1,0 +1,24 @@
+class A
+	{  
+	void msg()
+	{System.out.println("Hello");
+	    
+	}  
+	}  
+     class B
+     {  
+	void msg()
+	{
+	    System.out.println("Welcome");
+	    
+	}  
+	}  
+	public class meena extends A,B
+	{
+	   
+	 Public Static void main(String args[])
+	 {  
+	   meena obj=new meena();  
+	   obj.msg();
+	}  
+	}
