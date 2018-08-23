@@ -1,0 +1,28 @@
+import java.util.*;
+
+ class bike5 {
+
+	void display()
+
+	{
+
+		System.out.println(" IT Department");
+
+	}
+}  
+class main extends bike5
+{
+  int speed=100;  
+  void display(){  
+	  super.display();
+   System.out.println(" JAVA Programming");//will print speed of Bike   
+
+  }  
+  public static void main(String args[]){  
+
+   main b=new main();  
+
+   b.display();  
+
+}  
+}
