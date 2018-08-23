@@ -1,0 +1,23 @@
+class bike4 {
+
+//int speed=50;
+
+	 bike4()
+
+	 {
+		 System.out.println("Vehicle is created");
+	 }
+}  
+public class main extends bike4{  
+
+
+  main(){
+
+	  super();
+	  System.out.println("The vehicle which is created is BIKE");
+	  }  
+ public static void main(String args[]){  
+
+   main b=new main();  
+}
+}
