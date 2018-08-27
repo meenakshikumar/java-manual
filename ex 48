@@ -1,0 +1,15 @@
+	abstract class Main{  
+	   Main(){System.out.println("bike is created");}  
+	   abstract void run();  
+	   void changeGear(){System.out.println("gear changed");}  
+	 }  
+	  
+	 class Honda extends Main{  
+	 void run(){System.out.println("running safely..");}  
+	 }  
+	 class TestAbstraction2{  
+	 public static void main(String args[]){  
+	  Main obj = new Honda();  
+	  obj.run();  
+	  obj.changeGear();  
+	 }  	}  
