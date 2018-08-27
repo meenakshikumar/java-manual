@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+   public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Input the latitude of coordinate 1: ");
+        double latitude1 = input.nextDouble();
+        System.out.print("Input the longitude of coordinate 1: ");
+        double longitude1 = input.nextDouble();
+        System.out.print("Input the latitude of coordinate 2: ");
+        double latitude2 = input.nextDouble();
+        System.out.print("Input the longitude of coordinate 2: ");
+        double longitude2 = input.nextDouble();
+        System.out.print("The distance between those points is: " + distance_Between_LatLong(latitude1, longitude1, latitude2, longitude2) + " km\n");
+    }
+    public static double distance_Between_LatLong(double latitude1, double longitude1, double latitude2, double longitude2) {
+        latitude1 = Math.toRadians(latitude1);
+        longitude1 = Math.toRadians(longitude1);
+        latitude2 = Math.toRadians(latitude2);
+        longitude2 = Math.toRadians(longitude2);
+        double earthRadius = 6371.01; 
+        return earthRadius * Math.acos(Math.sin(latitude1)*Math.sin(latitude2) + Math.cos(latitude1)*Math.cos(latitude2)*Math.cos(longitude1 - longitude2));
+    }
+}
