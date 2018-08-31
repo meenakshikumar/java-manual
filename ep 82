@@ -1,0 +1,13 @@
+public class main {
+
+	
+	public static void main(String[] args) {
+			String s1="kava is a programming language. kava is a platform. kava is an Island.";    
+			String replaceString=s1.replace("kava","java");    
+			System.out.println(replaceString);  
+
+
+	}
+
+}
+
